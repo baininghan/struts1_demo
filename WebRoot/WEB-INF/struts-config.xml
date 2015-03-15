@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources />
+  <form-beans>
+  	<form-bean name="saveProductForm" type="mystruts.actionForm.ProductForm" />
+     <form-bean name="searchProductForm" type="mystruts.actionForm.ProductForm" />
+  </form-beans>
+  <global-exceptions />
+
+ <global-forwards>
+     <forward name="newProduct" path="/mystruts/newProduct.jsp" />
+     <forward name="searchProduct" path="/mystruts/searchProduct.jsp" />
+</global-forwards>
+
+  <action-mappings>
+  	<action name="saveProductForm" path="/saveProduct" scope="request" type="mystruts.action.SaveProductAction">
+	    <forward name="save" path="/mystruts/save.jsp" />
+	</action>
+  </action-mappings>
+  <message-resources parameter="struts.ApplicationResources" />
+</struts-config>
+
