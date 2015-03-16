@@ -1,5 +1,6 @@
-mysql:http://www.cnblogs.com/fslnet/p/3143344.html
-struts:http://www.blogjava.net/nokiaguy/archive/2009/01/13/251101.html
+MySql:<http://www.cnblogs.com/fslnet/p/3143344.html>
+Struts1:<http://www.blogjava.net/nokiaguy/archive/2009/01/13/251101.html>
+JSTL:<http://www.cnblogs.com/lihuiyy/archive/2012/02/24/2366806.html>
 
 1. 将samples.xml置于tomcat\conf\Catalina\localhost下
 2. 导入struts.sql
